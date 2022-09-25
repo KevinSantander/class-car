@@ -32,6 +32,6 @@ class auto {
 //Fin delos Metodos.
 };
 
-let primerauto = new auto(true,90,60);
-let velocidadDelAuto = primerauto.obtenerVelocidad();
+let primerAutomovil = new auto(true,90,60);
+let velocidadDelAutomovil = primerAutomovil.obtenerVelocidad();
 console.log("Velocidad Actual: " + velocidadDelAuto);
