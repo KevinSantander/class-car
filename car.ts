@@ -34,4 +34,4 @@ class auto {
 
 let primerAutomovil = new auto(true,90,60);
 let velocidadDelAutomovil = primerAutomovil.obtenerVelocidad();
-console.log("Velocidad Actual: " + velocidadDelAuto);
+console.log("Velocidad Actual: " + velocidadDelAutomovil);
