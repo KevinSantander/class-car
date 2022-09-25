@@ -1,15 +1,15 @@
 class auto {
-//variables internas de la clase
+// Variables internas de la clase
   public estaPrendido: boolean;
   public acelerar: number;
   public frenar: number;
-// funciones
+// Funciones
   constructor(encendidoApagado:boolean, aceleracion:number, frenado:number) {
     this.estaPrendido = encendidoApagado;
     this.acelerar = aceleracion;
     this.frenar = frenado;
   };
-
+// comienzo de los Metodos.
   prederApagar():void {
     if (this.estaPrendido === true) {
       this.estaPrendido = false;
@@ -29,9 +29,9 @@ class auto {
   disminucionDeVelocidad():void {
     this.frenar = this.frenar --;
   }
-
+//Fin delos Metodos.
 };
 
-let primerAuto = new auto(true,90,60);
-let velocidadDePrimerAuto = primerAuto.obtenerVelocidad();
-console.log("Velocidad Actual: " + velocidadDePrimerAuto);
+let primerauto = new auto(true,90,60);
+let velocidadDelAuto = primerauto.obtenerVelocidad();
+console.log("Velocidad Actual: " + velocidadDelAuto);
