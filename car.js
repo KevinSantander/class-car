@@ -1,13 +1,13 @@
-var auto = /** @class */ (function () {
+var Auto = /** @class */ (function () {
     // Funciones
-    function auto(encendidoApagado, aceleracion, frenado) {
+    function Auto(encendidoApagado, aceleracion, frenado) {
         this.estaPrendido = encendidoApagado;
         this.acelerar = aceleracion;
         this.frenar = frenado;
     }
     ;
     // comienzo de los Metodos.
-    auto.prototype.prederApagar = function () {
+    Auto.prototype.prederApagar = function () {
         if (this.estaPrendido === true) {
             this.estaPrendido = false;
         }
@@ -16,18 +16,18 @@ var auto = /** @class */ (function () {
         }
     };
     ;
-    auto.prototype.obtenerVelocidad = function () {
+    Auto.prototype.obtenerVelocidad = function () {
         return this.acelerar;
     };
-    auto.prototype.aumentoDeVelocidad = function () {
+    Auto.prototype.aumentoDeVelocidad = function () {
         this.acelerar = this.acelerar++;
     };
-    auto.prototype.disminucionDeVelocidad = function () {
+    Auto.prototype.disminucionDeVelocidad = function () {
         this.frenar = this.frenar--;
     };
-    return auto;
+    return Auto;
 }());
 ;
-var primerAutomovil = new auto(true, 90, 60);
+var primerAutomovil = new Auto(true, 90, 60);
 var velocidadDelAutomovil = primerAutomovil.obtenerVelocidad();
 console.log("Velocidad Actual: " + velocidadDelAutomovil);

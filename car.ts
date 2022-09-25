@@ -1,4 +1,4 @@
-class auto {
+class Auto {
 // Variables internas de la clase
   public estaPrendido: boolean;
   public acelerar: number;
@@ -32,6 +32,6 @@ class auto {
 //Fin delos Metodos.
 };
 
-let primerAutomovil = new auto(true,90,60);
+let primerAutomovil: Auto = new Auto(true,90,60);
 let velocidadDelAutomovil = primerAutomovil.obtenerVelocidad();
 console.log("Velocidad Actual: " + velocidadDelAutomovil);
