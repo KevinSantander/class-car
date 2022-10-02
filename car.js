@@ -2,8 +2,8 @@ var Auto = /** @class */ (function () {
     // Funciones
     function Auto(encendidoApagado, aceleracion, frenado) {
         this.estaPrendido = encendidoApagado;
-        this.acelerar = aceleracion;
-        this.frenar = frenado;
+        this.aceleracion = aceleracion;
+        this.frenado = frenado;
     }
     ;
     // comienzo de los Metodos.
@@ -17,13 +17,13 @@ var Auto = /** @class */ (function () {
     };
     ;
     Auto.prototype.obtenerVelocidad = function () {
-        return this.acelerar;
+        return this.aceleracion;
     };
     Auto.prototype.aumentoDeVelocidad = function () {
-        this.acelerar = this.acelerar++;
+        this.aceleracion = this.aceleracion++;
     };
     Auto.prototype.disminucionDeVelocidad = function () {
-        this.frenar = this.frenar--;
+        this.frenado = this.frenado--;
     };
     return Auto;
 }());

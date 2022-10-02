@@ -1,37 +1,37 @@
 class Auto {
-// Variables internas de la clase
+  // Variables internas de la clase
   public estaPrendido: boolean;
-  public acelerar: number;
-  public frenar: number;
-// Funciones
-  constructor(encendidoApagado:boolean, aceleracion:number, frenado:number) {
+  public aceleracion: number;
+  public frenado: number;
+  // Funciones
+  constructor(encendidoApagado: boolean, aceleracion: number, frenado: number) {
     this.estaPrendido = encendidoApagado;
-    this.acelerar = aceleracion;
-    this.frenar = frenado;
+    this.aceleracion = aceleracion;
+    this.frenado = frenado;
   };
-// comienzo de los Metodos.
-  prederApagar():void {
+  // comienzo de los Metodos.
+  public prederApagar(): void {
     if (this.estaPrendido === true) {
       this.estaPrendido = false;
-    }else{
+    } else {
       this.estaPrendido = true;
     }
   };
 
-  obtenerVelocidad():number {
-    return this.acelerar;
+  public obtenerVelocidad(): number {
+    return this.aceleracion;
   }
 
-  aumentoDeVelocidad():void {
-    this.acelerar = this.acelerar ++;
+  public aumentoDeVelocidad(): void {
+    this.aceleracion = this.aceleracion++;
   }
 
-  disminucionDeVelocidad():void {
-    this.frenar = this.frenar --;
+  public disminucionDeVelocidad(): void {
+    this.frenado = this.frenado--;
   }
-//Fin delos Metodos.
+  //Fin delos Metodos.
 };
 
-let primerAutomovil: Auto = new Auto(true,90,60);
+let primerAutomovil: Auto = new Auto(true, 90, 60);
 let velocidadDelAutomovil = primerAutomovil.obtenerVelocidad();
 console.log("Velocidad Actual: " + velocidadDelAutomovil);
